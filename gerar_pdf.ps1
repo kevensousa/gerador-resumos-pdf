@@ -94,6 +94,14 @@ $form.MaximizeBox = $false
 $form.BackColor = [System.Drawing.Color]::FromArgb(248, 249, 250)
 $form.Font = New-Object System.Drawing.Font("Segoe UI", 9.5)
 
+# Carregar icone da aplicacao
+$iconPath = Join-Path $PSScriptRoot "app.ico"
+if (Test-Path $iconPath) {
+    try {
+        $form.Icon = New-Object System.Drawing.Icon($iconPath)
+    } catch {}
+}
+
 # Variaveis de estado
 $script:currentPage = 0
 $script:totalPages = [Math]::Max(1, [int][Math]::Ceiling($sortedFiles.Count / 4.0))

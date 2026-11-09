@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="app.png" alt="Ícone do Gerador de Resumos PDF" width="96">
+</p>
+
 # 📋 Gerador de Resumos em PDF (2 Colunas A4)
 
 Uma ferramenta leve, rápida e **100% nativa para Windows** feita para estudantes e profissionais organizarem imagens de resumos, anotações de aula e fichas de estudo em PDFs diagramados no padrão A4.
